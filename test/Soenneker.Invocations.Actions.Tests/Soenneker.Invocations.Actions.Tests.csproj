@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Invocations.Actions.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Invocations.Actions\Soenneker.Invocations.Actions.csproj" />
     </ItemGroup>
 
     <ItemGroup>
