@@ -10,6 +10,9 @@ public sealed class ActionInvocation
 {
     private readonly Action<object?> _action;
 
+    /// <summary>
+    /// Gets state.
+    /// </summary>
     public object? State { get; }
 
     public ActionInvocation(Action<object?> action, object? state)
@@ -18,6 +21,9 @@ public sealed class ActionInvocation
         State = state;
     }
 
+    /// <summary>
+    /// Executes the invoke operation.
+    /// </summary>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public void Invoke() => _action(State);
 }
