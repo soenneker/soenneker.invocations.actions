@@ -3,11 +3,22 @@
 [![](https://img.shields.io/nuget/dt/soenneker.invocations.actions.svg?style=for-the-badge)](https://www.nuget.org/packages/soenneker.invocations.actions/)
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.invocations.actions/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.invocations.actions/actions/workflows/codeql.yml)
 
-# ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Invocations.Actions
-### Represents a deferred, stateful action that can be invoked later without capturing closures.
+# Soenneker.Invocations.Actions
 
-## Installation
+Deferred, stateful synchronous action invocation without closure capture.
 
-```
+## Install
+
+```bash
 dotnet add package Soenneker.Invocations.Actions
 ```
+
+## What you get
+
+- `ActionInvocation` — Deferred, stateful synchronous action invocation without closure capture.
+
+## API at a glance
+
+| API | What it does | Result / important behavior |
+| --- | --- | --- |
+| `ActionInvocation.State` | Gets state. | Gets state. |
