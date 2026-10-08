@@ -1,6 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Soenneker.Tests.Unit;
+using System.Threading;
 
 namespace Soenneker.Invocations.Actions.Tests;
 
@@ -13,7 +14,7 @@ public sealed class ActionInvocationTests : UnitTest
     }
 
     [Test]
-    public async ValueTask Invoke_passes_explicit_state()
+    public async ValueTask Invoke_passes_explicit_state(CancellationToken cancellationToken)
     {
         var counter = new Counter();
         var invocation = new ActionInvocation(static state => ((Counter)state!).Value++, counter);
